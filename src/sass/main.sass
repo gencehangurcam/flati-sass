@@ -2,5 +2,101 @@
 @import ./_icon
 @import ./_vars
 
-body
-    background-color: blue
+*
+    margin: 0
+    padding: 0
+    list-style: none
+    text-decoration: none
+    text-align: center
+    color: black
+    font-family: robloto
+
+
+header
+    nav
+        display: flex
+        justify-content: space-around
+        background-color: $bg-color
+        padding: 5px
+        h1
+            text-transform: uppercase
+            color: white
+        ul
+            display: flex
+            align-items: center
+            a
+                color: white
+                padding: 5px
+                &:hover 
+                    background: $blue
+    img
+        width: 100vw
+        height: 30vh
+.section-1
+    padding: 40px
+    text-align: center
+    background-color: #e8e6e0
+    p
+        margin-bottom: 15px
+        color: $text-gray
+    span:first-of-type
+        color: white
+        background-color: $blue-electric
+    span:nth-of-type(2)
+        color: $blue-electric    
+    span:last-of-type
+        color: black
+.section-2
+    display: flex
+    margin: 5vw 10vw
+
+    justify-content: space-between
+    // flex-wrap: wrap
+
+    div
+        background-color: #e2e0e0
+        margin: 15px
+        padding: 10px
+        width: 23%
+        i
+            background-color: white
+            color: $blue-electric
+            padding: 5px
+            border-radius: 25px
+        span
+            color: $blue-electric
+        i, h5, p
+            margin: 10px
+.section-3
+    display: flex
+    margin: 5vw 10vw
+    text-align: start
+    .div1
+        text-align: start
+    .div2
+        display: flex
+        
+
+
+
+@media screen and (max-width: 620px) 
+    .section-2
+        margin: 5vw
+        flex-wrap: wrap
+        div
+            margin: 10px
+            width: 100%
+    .section-3
+        .div2
+            flex-wrap: wrap
+  
+@media screen and (min-width: 620px) and ( max-width: 1024px )
+    .section-2
+        margin: 5vw
+        flex-wrap: wrap
+        div
+            margin: 10px 0
+            width: 45%
+    
+
+    
